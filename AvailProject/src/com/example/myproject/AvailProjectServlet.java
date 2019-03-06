@@ -5,12 +5,8 @@ import java.io.PrintWriter;
 import javax.servlet.http.*;
 
 import org.mortbay.log.Log;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
 
 @SuppressWarnings("serial")
-@Controller
 public class AvailProjectServlet extends HttpServlet {
 	@Override
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
@@ -42,11 +38,11 @@ public class AvailProjectServlet extends HttpServlet {
 		return modelAndview;
 	}*/
 	
-	@RequestMapping("/welcome")
+/*	@RequestMapping("/welcome")
 	public ModelAndView helloWordId(){
 		ModelAndView model = new ModelAndView("ViewAvail");
 		model.addObject("wellcome ririn", "Hay Ririn");
 		
 		return model;
-	}
+	}*/
 }
